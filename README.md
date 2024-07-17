@@ -25,7 +25,7 @@
     # add args --quantize, if you want to use the Quantized model
     ```
     * The predict result
-    <img src="fig/component1_result.jpg">
+    <img src="fig/component1_result.png">
 * Quantize model (Optional)
     ```bash
     python3 quantize/do_quantize.py --ov_model_path {path_to_openvino_FP32_xml_file}
@@ -34,13 +34,14 @@
     ```
 * Web demo
     >**NOTE: If you want to use quantized model, step "Quantize model" must be completed first.**
-    * Start the FP32 model
-        ```bash
-        python3 web_demo.py
 
-        # add args --quantize, if you want to start the FP32 and Quantized models at the same time
-        ```
-    Open website
+    **Start the FP32 model**
+    ```bash
+    python3 web_demo.py
+
+    # add args --quantize, if you want to start the FP32 and Quantized models at the same time
+    ```
+    **Open website**
     * After launch web_demo.py, you will receive below information
     <img src="fig/gradio_entrypoint.png">
     * Web DEMO Interface
