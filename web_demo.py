@@ -26,12 +26,9 @@ def build_parser() -> ArgumentParser:
 
 
 EXAMPLES = [
-    ["component/test1.png"],
-    ["component/test2.png"],
-    ["component/test3.png"],
-    ["component/test4.png"],
-    ["component/test5.png"],
-    ["component/test6.png"],
+    ["fig/component1.png"],
+    ["fig/component2.png"],
+    ["fig/component3.png"],
 ]
 
 object_points = []

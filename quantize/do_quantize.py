@@ -201,5 +201,3 @@ def main(args: ArgumentParser) -> None:
 if __name__ == "__main__":
     args = build_parser().parse_args()
     main(args)
-
-    # python3 quantize/do_quantize.py --ov_model_path FastSAM-x_openvino_model/FastSAM-x.xml
