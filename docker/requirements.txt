@@ -1,0 +1,5 @@
+openvino-dev>=2023.3.0
+nncf>=2.6.0
+ultralytics==8.0.200
+onnx
+gradio>=4.13
