@@ -44,12 +44,11 @@ if __name__ == "__main__":
 
     img = cv2.imread(args.img)
     ov_result = FASTSAM_OV_SERVER.infer(img)
-    mask_result = FASTSAM_OV_SERVER.postprocess_mask(ov_result)
-    print(type(mask_result))
 
-    # img_array = ov_result.plot()
-    # save_path = f"{args.output}.jpg" if args.output is not None else f"{Path(args.img).stem}_result.jpg"
-    # cv2.imwrite(save_path, img_array)
-    """
-    python3 cli.py --img test1.png --quantize
-    """
+    img_array = ov_result.plot()
+    save_path = (
+        f"{args.output}.jpg"
+        if args.output is not None
+        else f"{Path(args.img).stem}_result.jpg"
+    )
+    cv2.imwrite(save_path, img_array)
